@@ -15,7 +15,7 @@ pipeline {
         }
         stage Nexus_Store   {
             steps {
-                nexusBuild()
+                nexusStore()
             } 
         }
     }
