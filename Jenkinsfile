@@ -1,6 +1,10 @@
 pipeline {
     agent {
-        agent "GIT"
+        agent 'GIT'
+    }
+    tools
+    {
+        maven ('maven_3.9.0')
     }
     stages  {
         stage GIT_HUB   {
@@ -13,9 +17,9 @@ pipeline {
                 mavenBuild()
             } 
         }
-        stage Nexus_Store   {
+        stage Clean_WorkSpace   {
             steps {
-                nexusStore()
+                cleanWS()
             } 
         }
     }
