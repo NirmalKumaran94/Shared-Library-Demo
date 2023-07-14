@@ -1,4 +1,4 @@
 def call()
 {
-  nexus
+  cleanWs()
 }
