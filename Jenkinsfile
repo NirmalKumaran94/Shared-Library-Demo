@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        agent 'GIT'
+        agent any
     }
     tools
     {
